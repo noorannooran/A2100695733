@@ -40,7 +40,11 @@
 		[ ] validation of test information -> create new Test
 		[ ] onClick functionality -> insert Test into db
 		[ ] Toast message : errors, success
-	[ ] display information - spinner: patient or test, displays information based on selection
+	[ ] display information
+		[ ] layout
+			[ ] spinner or radio? patient or test
+			[ ] on select -> fragment? with spinner: patients by name, tests by patient name?
+			[ ] submit button -> displays fragment? with information on it
 [ ] SQLiteOpenHelper custom class
 	[x] execSQL statements create each table
 	[x] insert methods for each table
