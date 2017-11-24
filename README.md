@@ -1,6 +1,5 @@
 # COMP3074 Android App Development Assignment 2
 ## TO-DO
-
 - [x] classes for tables
 	- [x] User
 	- [x] Doctor
