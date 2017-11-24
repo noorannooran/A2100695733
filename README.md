@@ -20,11 +20,26 @@
 			[ ] add labels
 			[ ] add login button
 			[ ] general styling
-		[ ] add onClickFunctionality -> check 
-		
-	[ ] main menu activity - displays navigation after logging in
+		[ ] add onClickFunctionality -> check authentication -> triggers MainMenu activity
+	[ ] main menu activity
+		[ ] list view - Enter Patient, Enter Test
+		[ ] Submit Button -> Enter Patient Activity or Enter Test Activity
 	[ ] enter patient activity
+		[ ] layout
+			[ ] text boxes
+			[ ] dropdown for doctor
+			[ ] add patient button
+		[ ] validation of patient information -> create new Patient
+		[ ] onClick functionality -> insert Patient into db
+		[ ] Toast message : errors, success
 	[ ] enter test activity
+		[ ] layout
+			[ ] text boxes
+			[ ] dropdown for patient
+			[ ] add test button
+		[ ] validation of test information -> create new Test
+		[ ] onClick functionality -> insert Test into db
+		[ ] Toast message : errors, success
 	[ ] display information - spinner: patient or test, displays information based on selection
 [ ] SQLiteOpenHelper custom class
 	[x] execSQL statements create each table
