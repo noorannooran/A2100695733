@@ -9,6 +9,7 @@
 	[x] Test
 [ ] Activities
 	[ ] welcome activity - home screen: logo + login button
+		[ ] 
 	[ ] login activity
 	[ ] main menu activity - displays navigation after logging in
 	[ ] enter patient activity
@@ -18,5 +19,4 @@
 	[x] execSQL statements create each table
 	[x] insert methods for each table
 	[ ] insert dummy data
-	
 	
