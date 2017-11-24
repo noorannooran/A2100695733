@@ -7,10 +7,11 @@ import android.arch.persistence.room.PrimaryKey;
 
 /**
  * Created by nooran on 2017-11-23.
+ * Entity class Patient
  */
 
-@Entity(forgeignKeys = @ForeignKey(entity = Doctor.class,
-                                    parentColumns = "patientId",
+@Entity(foreignKeys  = @ForeignKey(entity = Doctor.class,
+                                    parentColumns = "doctorId",
                                     childColumns="doctorId" ))
 public class Patient {
     @PrimaryKey (autoGenerate = true)
@@ -26,34 +27,10 @@ public class Patient {
     private String department;
 
     @ColumnInfo(name="doctorId")
-    public int doctorId;
+    private int doctorId;
 
     @ColumnInfo
-    public String room;
-
-    //constructor without patientId
-    public Patient(String firstName, String lastName, String department, int doctorId, String room) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.department = department;
-        this.doctorId = doctorId;
-        this.room = room;
-    }
-    //constructor without doctorId
-    public Patient(int patientId, String firstName, String lastName, String department, String room) {
-        this.patientId = patientId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.department = department;
-        this.room = room;
-    }
-    //constructor without patient Id or doctor Id
-    public Patient(String firstName, String lastName, String department, String room) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.department = department;
-        this.room = room;
-    }
+    private String room;
 
     //overloaded constructor
     public Patient(int patientId, String firstName, String lastName, String department, int doctorId, String room) {
@@ -64,7 +41,31 @@ public class Patient {
         this.doctorId = doctorId;
         this.room = room;
     }
+    //constructor without patient Id or doctor Id
+    public Patient(String firstName, String lastName, String department, String room) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.department = department;
+        this.room = room;
+    }
+    //constructor without doctorId
+    public Patient(int patientId, String firstName, String lastName, String department, String room) {
+        this.patientId = patientId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.department = department;
+        this.room = room;
+    }
+    //constructor without patientId
+    public Patient(String firstName, String lastName, String department, int doctorId, String room) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.department = department;
+        this.doctorId = doctorId;
+        this.room = room;
+    }
 
+    //getters and setters
     public int getPatientId() {
         return patientId;
     }
@@ -107,5 +108,12 @@ public class Patient {
 
     public void setRoom(String room) {
         this.room = room;
+    }
+
+    //toString method returns "Patient FirstName LastName"
+    @Override
+    public String toString() {
+        return "Patient " + firstName + " " + lastName;
+
     }
 }
