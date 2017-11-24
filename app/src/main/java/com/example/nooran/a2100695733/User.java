@@ -1,4 +1,4 @@
-package com.example.nooran.a2100695733.db;
+package com.example.nooran.a2100695733;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
@@ -9,16 +9,11 @@ import android.arch.persistence.room.PrimaryKey;
  * Created by nooran on 2017-11-23.
  * Entity class User
  */
-@Entity
 
 public class User {
-    @PrimaryKey (autoGenerate = true)
+
     private int userId;
-
-    @ColumnInfo
     private String password;
-
-    @ColumnInfo
     private String userType;
 
     //constructors
@@ -29,7 +24,7 @@ public class User {
     }
 
     //getters and setters
-    public int getUserIdid() {
+    public int getUserId() {
         return userId;
     }
 

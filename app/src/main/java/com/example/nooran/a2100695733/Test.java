@@ -1,48 +1,27 @@
-package com.example.nooran.a2100695733.db;
+package com.example.nooran.a2100695733;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.ForeignKey;
+import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
 
 /**
  * Created by nooran on 2017-11-23.
- * Entity class for Test
+ * class for Test
  */
 
-@Entity(foreignKeys = @ForeignKey(entity = Patient.class,
-                                    parentColumns = "patientId",
-                                    childColumns = "patientId"))
 public class Test {
 
-    @PrimaryKey
     private int testId;
-
-    @ColumnInfo
     private String testType;
-
-    @ColumnInfo
     private int patientId;
-
-    @ColumnInfo
     private int bpl;
-
-    @ColumnInfo
     private int bph;
-
-    @ColumnInfo
     private float temperature;
-
-    @ColumnInfo
     private float redBloodCount;
-
-    @ColumnInfo
     private float whiteBloodCount;
-
-    @ColumnInfo
     private float hemoglobin;
-
-    @ColumnInfo
     private String comment;
 
     //overloaded constructor

@@ -19,7 +19,8 @@
         <activity android:name=".EnterTest" />
         <activity android:name=".EnterPatient" />
         <activity android:name=".DisplayInformation" />
-        <activity android:name=".MainMenu"></activity>
+        <activity android:name=".MainMenu" />
+        <activity android:name=".WelcomeActivity"></activity>
     </application>
 
 </manifest>
