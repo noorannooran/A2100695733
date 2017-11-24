@@ -53,7 +53,6 @@
 		[ ] user (authentication)
 		[ ] patient
 		[ ] tests - by patient id, by doctor? 
-[ ] styling
+[ ] stylez
 	[x] add custom colors to colors.xml file
 	[ ] GIMP transparent medic logo - text and image
-	[ ] general styling for each layout
