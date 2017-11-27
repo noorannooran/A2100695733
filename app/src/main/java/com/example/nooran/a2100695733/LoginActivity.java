@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.nooran.a2100695733.db.MedicDataProvider;
 import com.example.nooran.a2100695733.db.MedicDataSource;
 import com.example.nooran.a2100695733.models.User;
 
@@ -22,12 +23,21 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
 
         dataSource = new MedicDataSource(this);
+
+        dataSource.open();
+        for (User user : MedicDataProvider.userList) {
+            dataSource.createUser(user);
+        }
+
     }
 
     public void buttonClickHandler(View view) {
         //get input
-        String username = findViewById(R.id.testUsername).toString();
-        String password = findViewById(R.id.textPassword).toString();
+        EditText userName = (EditText) findViewById(R.id.textUsername);
+        EditText passWord = (EditText) findViewById(R.id.textPassword);
+
+        String username = userName.getText().toString();
+        String password = passWord.getText().toString();
 
         //get user from database
         User user = dataSource.getUser(username);
@@ -59,6 +69,8 @@ public class LoginActivity extends Activity {
 
         //open connection to database
         dataSource.open();
+
+
     }
     @Override
     protected void onPause()

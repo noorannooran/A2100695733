@@ -31,6 +31,12 @@ public class User {
         this.userType = userType;
     }
 
+    public User(String userName, String password, String userType)
+    {
+        this.userName = userName;
+        this.password = password;
+        this.userType = userType;
+    }
     //getters and setters
     public long getUserId() {
         return id;

@@ -19,4 +19,15 @@ public class MedicDataProvider {
     public static List<Nurse> nurseList;
     public static List<Patient> patientList;
 
+    static
+    {
+        userList = new ArrayList<>();
+
+        User user = new User("admin", "admin", "nurse");
+        userList.add(user);
+    }
+
+
+
+
 }

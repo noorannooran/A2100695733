@@ -16,7 +16,7 @@ import com.example.nooran.a2100695733.models.User;
  */
 
 public class MedicDatabaseHelper extends SQLiteOpenHelper {
-    private static final String DB_NAME = "medicDB";
+    private static final String DB_NAME = "medicDB.db";
     private static final int DB_VERSION = 1;
 
     MedicDatabaseHelper(Context context)
