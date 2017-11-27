@@ -23,13 +23,14 @@
 		- [X] add onClickFunctionality -> check authentication -> triggers MainMenu activity
 	- [ ] main menu activity
 		- [X] list view - Enter Patient, Enter Test
-		- [ ] on select -> new activity
+		- [X] on select -> new activity
 	- [ ] enter patient activity
 		- [ ] layout
-			- [ ] text boxes
-			- [ ] dropdown for doctor
-			- [ ] add patient button
+			- [X] text boxes
+			- [X] dropdown for doctor
+			- [X] add patient button
 		- [ ] validation of patient information -> create new Patient
+		- [ ] populate spinner with database : doctor
 		- [ ] onClick functionality -> insert Patient into db
 		- [ ] Toast message : errors, success
 	- [ ] enter test activity
