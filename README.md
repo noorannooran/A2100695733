@@ -10,19 +10,20 @@
 	- [ ] welcome activity - home screen: logo + login button
 		- [ ] layout
 			- [X] add placeholder logo
-			- [ ] add button
+			- [X] add button
 			- [ ] general styling
-		- [ ] add onClickFunctionality -> triggers LoginActivity
+		- [X] add onClickFunctionality -> triggers LoginActivity
 	- [ ] login activity
 		- [ ] layout
-			- [ ] add text boxes
+			- [X] add text boxes
 			- [ ] add labels
-			- [ ] add login button
+			- [X] add login button
 			- [ ] general styling
-		- [ ] add onClickFunctionality -> check authentication -> triggers MainMenu activity
+			- [X] toast error message
+		- [X] add onClickFunctionality -> check authentication -> triggers MainMenu activity
 	- [ ] main menu activity
-		- [ ] list view - Enter Patient, Enter Test
-		- [ ] Submit Button -> Enter Patient Activity or Enter Test Activity
+		- [X] list view - Enter Patient, Enter Test
+		- [ ] on select -> new activity
 	- [ ] enter patient activity
 		- [ ] layout
 			- [ ] text boxes
@@ -48,10 +49,10 @@
 	- [x] execSQL statements create each table
 	- [x] insert methods for each table
 	- [ ] insert dummy data
-	- [ ] select statements
-		- [ ] user (authentication)
-		- [ ] patient
-		- [ ] tests - by patient id, by doctor? 
+	- [X] select statements
+		- [X] user (authentication)
+		- [X] patient
+		- [X] tests - by patient id, by doctor? 
 - [ ] stylez
 	- [x] add custom colors to colors.xml file
 	- [ ] GIMP transparent medic logo - text and image
