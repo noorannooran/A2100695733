@@ -1,4 +1,4 @@
-package com.example.nooran.a2100695733;
+package com.example.nooran.a2100695733.models;
 
 
 
@@ -10,14 +10,19 @@ package com.example.nooran.a2100695733;
 
 public class Doctor {
 
-    private int doctorId;
+    private long id;
     private String firstName;
     private String lastName;
     private String department;
 
+    //default
+    public Doctor()
+    {
+
+    }
     //overloaded constructor
-    public Doctor(int doctorId, String firstName, String lastName, String department) {
-        this.doctorId = doctorId;
+    public Doctor(long doctorId, String firstName, String lastName, String department) {
+        this.id = doctorId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.department = department;
@@ -29,9 +34,11 @@ public class Doctor {
         this.department = department;
     }
     //getters and setters
-    public int getDoctorId() {
-        return doctorId;
+    public long getId() {
+        return id;
     }
+
+    public void setId(long id){this.id = id;}
 
     public String getFirstName() {
         return firstName;

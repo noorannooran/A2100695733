@@ -1,4 +1,4 @@
-package com.example.nooran.a2100695733;
+package com.example.nooran.a2100695733.models;
 
 
 /**
@@ -8,16 +8,20 @@ package com.example.nooran.a2100695733;
 
 public class Patient {
 
-    private int patientId;
+    private long id;
     private String firstName;
     private String lastName;
     private String department;
-    private int doctorId;
+    private long doctorId;
     private String room;
 
+    //constructors
+    //default
+    public Patient(){}
+
     //overloaded constructor
-    public Patient(int patientId, String firstName, String lastName, String department, int doctorId, String room) {
-        this.patientId = patientId;
+    public Patient(long patientId, String firstName, String lastName, String department, long doctorId, String room) {
+        this.id = patientId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.department = department;
@@ -32,15 +36,15 @@ public class Patient {
         this.room = room;
     }
     //constructor without doctorId
-    public Patient(int patientId, String firstName, String lastName, String department, String room) {
-        this.patientId = patientId;
+    public Patient(long patientId, String firstName, String lastName, String department, String room) {
+        this.id = patientId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.department = department;
         this.room = room;
     }
     //constructor without patientId
-    public Patient(String firstName, String lastName, String department, int doctorId, String room) {
+    public Patient(String firstName, String lastName, String department, long doctorId, String room) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.department = department;
@@ -49,9 +53,11 @@ public class Patient {
     }
 
     //getters and setters
-    public int getPatientId() {
-        return patientId;
+    public long getId() {
+        return id;
     }
+
+    public void setId(long id){this.id = id;}
 
     public String getFirstName() {
         return firstName;
@@ -77,11 +83,11 @@ public class Patient {
         this.department = department;
     }
 
-    public int getDoctorId() {
+    public long getDoctorId() {
         return doctorId;
     }
 
-    public void setDoctorId(int doctorId) {
+    public void setDoctorId(long doctorId) {
         this.doctorId = doctorId;
     }
 

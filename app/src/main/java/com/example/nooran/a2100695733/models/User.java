@@ -1,4 +1,4 @@
-package com.example.nooran.a2100695733;
+package com.example.nooran.a2100695733.models;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
@@ -12,25 +12,37 @@ import android.arch.persistence.room.PrimaryKey;
 
 public class User {
 
-    private int userId;
+    private long id;
+    private String userName;
     private String password;
     private String userType;
 
     //constructors
-    public User(int userId, String password, String userType) {
-        this.userId = userId;
+    //default
+    public User()
+    {
+
+    }
+
+    //overloaded
+    public User(long userId, String userName, String password, String userType) {
+        this.id = userId;
         this.password = password;
         this.userType = userType;
     }
 
     //getters and setters
-    public int getUserId() {
-        return userId;
+    public long getUserId() {
+        return id;
     }
 
-    public void setUserId(int uid) {
-        this.userId = uid;
+    public void setUserId(long uid) {
+        this.id = uid;
     }
+
+    public String getUserName(){return userName;}
+
+    public void setUserName(String userName){this.userName = userName;}
 
     public String getPassword() {
         return password;

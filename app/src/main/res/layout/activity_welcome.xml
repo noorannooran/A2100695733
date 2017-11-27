@@ -13,4 +13,13 @@
         android:layout_height="wrap_content"
         android:src="@drawable/placeholder_logo"
         />
+    <Button
+        android:id="@+id/buttonEnter"
+        android:text="Enter"
+        android:onClick="buttonClickHandler"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

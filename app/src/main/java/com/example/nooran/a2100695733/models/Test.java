@@ -1,4 +1,4 @@
-package com.example.nooran.a2100695733;
+package com.example.nooran.a2100695733.models;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
@@ -13,9 +13,9 @@ import android.arch.persistence.room.PrimaryKey;
 
 public class Test {
 
-    private int testId;
+    private long id;
     private String testType;
-    private int patientId;
+    private long patientId;
     private int bpl;
     private int bph;
     private float temperature;
@@ -24,11 +24,15 @@ public class Test {
     private float hemoglobin;
     private String comment;
 
+    //constructors
+    //default
+    public Test(){}
+
     //overloaded constructor
-    public Test(int testId, String testType, int patientId, int bpl, int bph,
+    public Test(long testId, String testType, long patientId, int bpl, int bph,
                 float temperature, float redBloodCount, float whiteBloodCount,
                 float hemoglobin, String comment) {
-        this.testId = testId;
+        this.id = testId;
         this.testType = testType;
         this.patientId = patientId;
         this.bpl = bpl;
@@ -40,7 +44,7 @@ public class Test {
         this.comment = comment;
     }
     //constructor without testId
-    public Test(String testType, int patientId, int bpl, int bph,
+    public Test(String testType, long patientId, int bpl, int bph,
                 float temperature, float redBloodCount, float whiteBloodCount,
                 float hemoglobin, String comment) {
         this.testType = testType;
@@ -54,7 +58,7 @@ public class Test {
         this.comment = comment;
     }
     //constructor without testId and without blood count
-    public Test(String testType, int patientId, int bpl, int bph, float temperature, String comment) {
+    public Test(String testType, long patientId, int bpl, int bph, float temperature, String comment) {
         this.testType = testType;
         this.patientId = patientId;
         this.bpl = bpl;
@@ -64,8 +68,8 @@ public class Test {
     }
 
     //getters and setters
-    public int getTestId() {
-        return testId;
+    public long getTestId() {
+        return id;
     }
 
     public String getTestType() {
@@ -76,11 +80,11 @@ public class Test {
         this.testType = testType;
     }
 
-    public int getPatientId() {
+    public long getPatientId() {
         return patientId;
     }
 
-    public void setPatientId(int patientId) {
+    public void setPatientId(long patientId) {
         this.patientId = patientId;
     }
 
@@ -143,7 +147,7 @@ public class Test {
     @Override
     public String toString() {
         return "Test{" +
-                "testId=" + testId +
+                "testId=" + id +
                 ", testType='" + testType + '\'' +
                 ", patientId=" + patientId +
                 ", bpl=" + bpl +
