@@ -7,7 +7,7 @@ import android.arch.persistence.room.PrimaryKey;
 
 /**
  * Created by nooran on 2017-11-23.
- * Entity class User
+ *  class User
  */
 
 public class User {

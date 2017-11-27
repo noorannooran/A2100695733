@@ -3,7 +3,7 @@ package com.example.nooran.a2100695733.models;
 
 /**
  * Created by nooran on 2017-11-23.
- * Entity class Patient
+
  */
 
 public class Patient {

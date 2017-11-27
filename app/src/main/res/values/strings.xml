@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">A2100695733</string>
+    <string-array name="main_menu_nurse">
+        <item>Enter Test</item>
+        <item>Enter Patient</item>
+        <item>Display Test</item>
+        <item>Display Patient</item>
+    </string-array>
+    <string-array name="main_menu_doctor">
+        <item>Enter Test</item>
+        <item>Display Test</item>
+    </string-array>
+
 </resources>

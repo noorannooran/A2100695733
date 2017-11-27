@@ -3,8 +3,12 @@ package com.example.nooran.a2100695733;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.nooran.a2100695733.db.MedicDataSource;
+import com.example.nooran.a2100695733.models.User;
 
 public class LoginActivity extends Activity {
 
@@ -20,17 +24,33 @@ public class LoginActivity extends Activity {
         dataSource = new MedicDataSource(this);
     }
 
-    public void buttonClickHandler() {
-        //validate input
-        //if input matches
-        Intent intent = new Intent(this, MainMenuActivity.class);
+    public void buttonClickHandler(View view) {
+        //get input
+        String username = findViewById(R.id.testUsername).toString();
+        String password = findViewById(R.id.textPassword).toString();
 
-        //send userType to next activity
+        //get user from database
+        User user = dataSource.getUser(username);
 
-        //start activity
-        startActivity(intent);
+        //compare passwords
+        if(user.getPassword().equals(password)) {
+            //init intent
+            Intent intent = new Intent(this, MainMenuActivity.class);
 
-        //else: toast
+            //send userType to next activity
+            intent.putExtra("user_type", user.getUserType());
+
+            //start activity
+            startActivity(intent);
+        }
+        else
+        {
+            CharSequence text = "username or password does not match";
+            int duration = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(this, text, duration);
+            toast.show();
+        }
     }
     @Override
     protected void onResume()
@@ -48,4 +68,5 @@ public class LoginActivity extends Activity {
         //close connection to database
         dataSource.close();
     }
+
 }
