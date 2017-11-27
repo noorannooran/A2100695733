@@ -35,11 +35,12 @@
 		- [ ] Toast message : errors, success
 	- [ ] enter test activity
 		- [ ] layout
-			- [ ] text boxes
-			- [ ] dropdown for patient
-			- [ ] add test button
+			- [X] text boxes
+			- [X] dropdown for patient
+			- [X] add test button
 		- [ ] validation of test information -> create new Test
 		- [ ] onClick functionality -> insert Test into db
+		- [ ] spinner - populate with patients
 		- [ ] Toast message : errors, success
 	- [ ] display information
 		- [ ] layout
