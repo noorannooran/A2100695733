@@ -16,7 +16,6 @@
 	- [ ] login activity
 		- [ ] layout
 			- [X] add text boxes
-			- [ ] add labels
 			- [X] add login button
 			- [ ] general styling
 			- [X] toast error message
@@ -29,28 +28,33 @@
 			- [X] text boxes
 			- [X] dropdown for doctor
 			- [X] add patient button
-		- [ ] validation of patient information -> create new Patient
-		- [ ] populate spinner with database : doctor
-		- [ ] onClick functionality -> insert Patient into db
-		- [ ] Toast message : errors, success
+		- [X] validation of patient information -> create new Patient
+		- [X] populate spinner with database : doctor
+		- [X] onClick functionality -> insert Patient into db
+		- [X] Toast message : errors, success
 	- [ ] enter test activity
 		- [ ] layout
 			- [X] text boxes
 			- [X] dropdown for patient
 			- [X] add test button
-		- [ ] validation of test information -> create new Test
-		- [ ] onClick functionality -> insert Test into db
-		- [ ] spinner - populate with patients
-		- [ ] Toast message : errors, success
+		- [X] validation of test information -> create new Test
+		- [X] onClick functionality -> insert Test into db
+		- [X] spinner - populate with patients
+		- [X] Toast message : errors, success
 	- [ ] display information
-		- [ ] layout
-			- [ ] spinner or radio? patient or test
-			- [ ] on select -> fragment? with spinner: patients by name, tests by patient name?
-			- [ ] submit button -> displays fragment? with information on it
+		- [X] layout
+			- [X] radio group select record: patient or test
+			- [X] spinner
+			- [X] textView to display information
+			- [ ] general styling
+		- [X] functionailty
+			- [X] on radio button selected, populate spinner from database
+			- [X] on spinner item selected, display info (patient or test selected)
+			- [X] toast success message
 - [ ] SQLiteOpenHelper custom class
 	- [x] execSQL statements create each table
 	- [x] insert methods for each table
-	- [ ] insert dummy data
+	- [X] insert dummy data (MedicDataProvider)
 	- [X] select statements
 		- [X] user (authentication)
 		- [X] patient
