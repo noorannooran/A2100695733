@@ -5,14 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.nooran.a2100695733.DisplayInfoActivity">
+    tools:context="com.example.nooran.a2100695733.DisplayInfoActivity"
+    style="@style/Padding">
 
 
     <TextView
         android:id="@+id/textTitle"
-        android:layout_width="match_parent"
+        style="@style/MyText.Large.Title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Records" />
+        android:text="View Records"
+        android:layout_gravity="center_horizontal"/>
 
 
     <RadioGroup
@@ -61,7 +64,8 @@
                 android:id="@+id/textInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Where patient or test info will go" />
+                android:text=""
+                style="@style/MyText.Medium"/>
         </LinearLayout>
     </ScrollView>
 

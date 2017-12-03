@@ -3,28 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearTest"
     tools:context="com.example.nooran.a2100695733.EnterTestActivity"
-    style="@style/Padding"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <Button
-        android:id="@+id/addTest"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="buttonClickHandler"
-        android:text="Add"
-        style="@style/MyButton"/>
-    <LinearLayout style="@style/Padding"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        style="@style/Padding"
         android:layout_height="match_parent"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:orientation="vertical"
-        >
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp">
 
         <TextView
             android:id="@+id/lblTitle"
+            style="@style/MyText.Large.Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
             android:text="Enter Test" />
-
 
 
         <TableLayout
@@ -32,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:stretchColumns="1">
+            android:stretchColumns="4">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -41,30 +40,31 @@
                 <TextView
                     android:id="@+id/lblTestType"
                     android:text="Test Type"
-
+                    style="@style/MyText.Medium"
                     />
 
                 <EditText
                     android:id="@+id/testType"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    />
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
             </TableRow>
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/lblPatient"
-                    android:text="Patient"
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    />
+                    android:layout_height="wrap_content"
+                    android:text="Patient"
+                    style="@style/MyText.Medium"/>
+
                 <Spinner
                     android:id="@+id/patientSpinner"
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1">
 
                 </Spinner>
@@ -77,10 +77,10 @@
 
                 <TextView
                     android:id="@+id/lblBPL"
-                    android:text="BPL"
+                    style="@style/MyText.Medium"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    />
+                    android:text="BPL" />
 
                 <EditText
                     android:id="@+id/bpl"
@@ -88,19 +88,13 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
 
-                    android:inputType="number" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
-
+                    android:inputType="number"></EditText>
                 <TextView
                     android:id="@+id/lblBPH"
-                    android:text="BPH"
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BPH"
+                    style="@style/MyText.Medium"
 
                     />
 
@@ -109,20 +103,26 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:inputType="number" />
+                    android:inputType="number" />/>
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/lblTemperature"
-                    android:text="Temperature"
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    />
+                    android:layout_height="wrap_content"
+                    android:text="Temp"
+                    style="@style/MyText.Medium"/>
 
                 <EditText
                     android:id="@+id/temperature"
@@ -139,10 +139,10 @@
 
                 <TextView
                     android:id="@+id/lblRedBlood"
-                    android:text="Red Blood Count"
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    />
+                    android:layout_height="wrap_content"
+                    android:text="RBC"
+                    style="@style/MyText.Medium"/>
 
                 <EditText
                     android:id="@+id/redBlood"
@@ -152,18 +152,12 @@
                     android:inputType="numberDecimal"
                     android:text="" />
 
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
-
                 <TextView
                     android:id="@+id/lblWhiteBlood"
-                    android:text="White Blood Count"
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    />
+                    android:layout_height="wrap_content"
+                    android:text="WBC"
+                    style="@style/MyText.Medium"/>
 
                 <EditText
                     android:id="@+id/whiteBlood"
@@ -172,18 +166,19 @@
                     android:layout_weight="1"
                     android:inputType="numberDecimal"
                     android:text="" />
+
             </TableRow>
+
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/lblHemoglobin"
-                    android:text="Hemoglobin"
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    />
+                    android:layout_height="wrap_content"
+                    android:text="Hemoglobin"
+                    style="@style/MyText.Medium"/>
 
                 <EditText
                     android:id="@+id/hemoglobin"
@@ -193,28 +188,35 @@
                     android:inputType="numberDecimal"
                     android:text="" />
             </TableRow>
+
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/lblComment"
-                    android:text="Comment"
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    />
+                    android:layout_height="wrap_content"
+                    android:text="Comment"
+                    style="@style/MyText.Medium"/>
 
                 <EditText
                     android:id="@+id/comment"
-                    android:text=""
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    />
+                    android:text="" />
             </TableRow>
         </TableLayout>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/addTest"
+        style="@style/MyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClickHandler"
+        android:text="Add" />
 
 
 </RelativeLayout>

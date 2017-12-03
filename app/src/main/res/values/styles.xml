@@ -25,5 +25,27 @@
         <item name="android:paddingLeft">@dimen/padding</item>
         <item name="android:paddingRight">@dimen/padding</item>
     </style>
+    <style name="PaddingSides">
+        <item name="android:paddingLeft">@dimen/padding</item>
+        <item name="android:paddingRight">@dimen/padding</item>
+    </style>
+    <style name="MyText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MyText.Large">
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+    <style name="MyText.Medium">
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+    <style name="MyText.Medium.Title">
+        <item name="android:textColor">@color/colorDark</item>
+    </style>
+    <style name="MyText.Large.Title">
+        <item name="android:textColor">@color/colorDark</item>
+        <item name="android:paddingBottom">@dimen/padding</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
 
 </resources>
