@@ -1,6 +1,5 @@
 package com.example.nooran.a2100695733;
 
-import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +7,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
-import static android.R.id.list;
 
 public class MainMenuActivity extends ListActivity {
 
@@ -48,21 +45,15 @@ public class MainMenuActivity extends ListActivity {
                 switch(selection)
                 {
                     case "Enter Test":
-                        intent = new Intent(getApplicationContext(), EnterTest.class);
+                        intent = new Intent(getApplicationContext(), EnterTestActivity.class);
                         startActivity(intent);
                         break;
                     case "Enter Patient":
-                        intent = new Intent(getApplicationContext(), EnterPatient.class);
+                        intent = new Intent(getApplicationContext(), EnterPatientActivity.class);
                         startActivity(intent);
                         break;
-                    case "Display Test":
-                        intent = new Intent(getApplicationContext(), DisplayInformation.class);
-                        intent.putExtra("info", "test");
-                        startActivity(intent);
-                        break;
-                    case "Display Patient":
-                        intent = new Intent(getApplicationContext(), DisplayInformation.class);
-                        intent.putExtra("info", "patient");
+                    case "Display Info":
+                        intent = new Intent(getApplicationContext(), DisplayInfoActivity.class);
                         startActivity(intent);
                         break;
                 }

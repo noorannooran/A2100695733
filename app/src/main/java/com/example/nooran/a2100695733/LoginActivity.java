@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import com.example.nooran.a2100695733.db.MedicDataProvider;
 import com.example.nooran.a2100695733.db.MedicDataSource;
+import com.example.nooran.a2100695733.models.Doctor;
+import com.example.nooran.a2100695733.models.Nurse;
 import com.example.nooran.a2100695733.models.User;
 
 public class LoginActivity extends Activity {
@@ -27,6 +29,12 @@ public class LoginActivity extends Activity {
         dataSource.open();
         for (User user : MedicDataProvider.userList) {
             dataSource.createUser(user);
+        }
+        for(Doctor doctor: MedicDataProvider.doctorList){
+            dataSource.createDoctor(doctor);
+        }
+        for(Nurse nurse: MedicDataProvider.nurseList){
+            dataSource.createNurse(nurse);
         }
 
     }

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearContainer"
-    tools:context="com.example.nooran.a2100695733.EnterPatient"
+    tools:context="com.example.nooran.a2100695733.EnterPatientActivity"
     style="@style/Padding"
     android:layout_width="match_parent"
     android:layout_height="match_parent">

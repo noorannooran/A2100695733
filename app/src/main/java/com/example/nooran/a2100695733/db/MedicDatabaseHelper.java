@@ -29,6 +29,7 @@ public class MedicDatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db)
     {
         //create database tables
+
         db.execSQL(MedicContract.CREATE_USER_ENTRY_TABLE);
         db.execSQL(MedicContract.CREATE_DOCTOR_ENTRY_TABLE);
         db.execSQL(MedicContract.CREATE_NURSE_ENTRY_TABLE);

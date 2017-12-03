@@ -102,7 +102,17 @@ public class Patient {
     //toString method returns "Patient FirstName LastName"
     @Override
     public String toString() {
-        return "Patient " + firstName + " " + lastName;
+        return firstName + " " + lastName;
+
+    }
+
+    public String patientString() {
+        return
+                "First Name: " + firstName + '\n' +
+                "Last Name: " + lastName + '\n' +
+                "Department: " + department + '\n' +
+                "Doctor ID: " + doctorId + '\n' +
+                "Room: " + room + '\n';
 
     }
 }

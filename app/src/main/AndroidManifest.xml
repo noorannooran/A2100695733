@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EnterTest" />
-        <activity android:name=".EnterPatient" />
-        <activity android:name=".DisplayInformation" />
+        <activity android:name=".EnterTestActivity" />
+        <activity android:name=".EnterPatientActivity" />
+        <activity android:name=".DisplayInfoActivity" />
         <activity android:name=".MainMenuActivity" />
         <activity android:name=".LoginActivity"></activity>
     </application>

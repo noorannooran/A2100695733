@@ -146,18 +146,19 @@ public class Test {
 
     @Override
     public String toString() {
-        return "Test{" +
-                "testId=" + id +
-                ", testType='" + testType + '\'' +
-                ", patientId=" + patientId +
-                ", bpl=" + bpl +
-                ", bph=" + bph +
-                ", temperature=" + temperature +
-                ", redBloodCount=" + redBloodCount +
-                ", whiteBloodCount=" + whiteBloodCount +
-                ", hemoglobin=" + hemoglobin +
-                ", comment='" + comment + '\'' +
-                '}';
+        return "Test" + id;
+    }
+
+    public String testString() {
+        return "Test " + id + "\n" +
+                "Test Type: " + testType + "\n" +
+                "Patient Id: " + patientId + "\n" +
+                "Blood Pressure: " + bph+ "\" + bpl \n" +
+                "Temperature: " + temperature + " F \n" +
+                "Red Blood Count: " + redBloodCount + "x1,000,000 \n" +
+                "White Blood Count: " + whiteBloodCount + "x1000 \n" +
+                "Hemoglobin: " + hemoglobin + "g/dL \n" +
+                "Comment: " + comment;
     }
 }
 
