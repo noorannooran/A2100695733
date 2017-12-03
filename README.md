@@ -61,3 +61,4 @@
 	- [x] add custom colors to colors.xml file
 	- [ ] GIMP transparent medic logo - text and image
 	- [ ] add styles for text and buttons in styles.xml
+	- [ ] add styles to layouts
