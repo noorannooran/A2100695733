@@ -57,8 +57,8 @@
 		- [X] user (authentication)
 		- [X] patient
 		- [X] tests - by patient id, by doctor? 
-- [ ] stylez
+- [X] stylez
 	- [x] add custom colors to colors.xml file
-	- [ ] GIMP transparent medic logo - text and image
-	- [ ] add styles for text and buttons in styles.xml
-	- [ ] add styles to layouts
+	- [X] GIMP transparent medic logo - text and image
+	- [X] add styles for text and buttons in styles.xml
+	- [X] add styles to layouts
