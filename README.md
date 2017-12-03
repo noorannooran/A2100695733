@@ -6,25 +6,24 @@
 	- [x] Nurse
 	- [x] Patient
 	- [x] Test
-- [ ] Activities
-	- [ ] welcome activity - home screen: logo + login button
-		- [ ] layout
-			- [X] add placeholder logo
+- [X] Activities
+	- [X] welcome activity - home screen: logo + login button
+		- [X] layout
+			- [X] add placeholder logo in imageview
 			- [X] add button
-			- [ ] general styling
 		- [X] add onClickFunctionality -> triggers LoginActivity
-	- [ ] login activity
-		- [ ] layout
+	- [X] login activity
+		- [X] layout
 			- [X] add text boxes
 			- [X] add login button
-			- [ ] general styling
+		- [X] functionality
 			- [X] toast error message
-		- [X] add onClickFunctionality -> check authentication -> triggers MainMenu activity
-	- [ ] main menu activity
+			- [X] add onClickFunctionality -> check authentication -> triggers MainMenu activity
+	- [X] main menu activity
 		- [X] list view - Enter Patient, Enter Test
 		- [X] on select -> new activity
-	- [ ] enter patient activity
-		- [ ] layout
+	- [X] enter patient activity
+		- [X] layout
 			- [X] text boxes
 			- [X] dropdown for doctor
 			- [X] add patient button
@@ -32,26 +31,25 @@
 		- [X] populate spinner with database : doctor
 		- [X] onClick functionality -> insert Patient into db
 		- [X] Toast message : errors, success
-	- [ ] enter test activity
-		- [ ] layout
+	- [X] enter test activity
+		- [X] layout
 			- [X] text boxes
 			- [X] dropdown for patient
-			- [X] add test button
+			- [X] add-test button
 		- [X] validation of test information -> create new Test
 		- [X] onClick functionality -> insert Test into db
 		- [X] spinner - populate with patients
 		- [X] Toast message : errors, success
-	- [ ] display information
+	- [X] display information
 		- [X] layout
 			- [X] radio group select record: patient or test
 			- [X] spinner
 			- [X] textView to display information
-			- [ ] general styling
 		- [X] functionailty
 			- [X] on radio button selected, populate spinner from database
 			- [X] on spinner item selected, display info (patient or test selected)
 			- [X] toast success message
-- [ ] SQLiteOpenHelper custom class
+- [X] SQLiteOpenHelper custom class
 	- [x] execSQL statements create each table
 	- [x] insert methods for each table
 	- [X] insert dummy data (MedicDataProvider)
@@ -62,3 +60,4 @@
 - [ ] stylez
 	- [x] add custom colors to colors.xml file
 	- [ ] GIMP transparent medic logo - text and image
+	- [ ] add styles for text and buttons in styles.xml
